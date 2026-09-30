@@ -1,0 +1,9 @@
+{
+  "name":"PolarOps",
+  "short_name":"PolarOps",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#07111a",
+  "theme_color":"#07111a",
+  "description":"Polar expedition operations and logistics platform"
+}

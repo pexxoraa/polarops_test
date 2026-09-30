@@ -1,0 +1,29 @@
+{
+  "locations": [
+    {
+      "name": "Authorized Field Camp Demo",
+      "type": "Camp",
+      "latitude": -69.5000,
+      "longitude": 76.2500
+    }
+  ],
+  "workers": [
+    {
+      "external_id": "DEMO-WKR-001",
+      "name": "Demo Field Worker",
+      "role": "Field Engineer",
+      "team": "Demo Team",
+      "status": "Safe",
+      "clearance_status": "Cleared",
+      "location_name": "Authorized Field Camp Demo",
+      "latitude": -69.5001,
+      "longitude": 76.2502,
+      "accuracy_m": 8.0,
+      "speed_kph": 0,
+      "heading": 0,
+      "last_checkin": "2026-09-28T03:00:00+00:00",
+      "recorded_at": "2026-09-28T03:00:00+00:00",
+      "synthetic": true
+    }
+  ]
+}

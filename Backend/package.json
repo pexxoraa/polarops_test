@@ -1,0 +1,28 @@
+{
+  "name": "polarops-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch index.js",
+    "start": "node --env-file-if-exists=.env index.js",
+    "dev:worker": "wrangler dev",
+    "deploy:worker": "wrangler deploy",
+    "d1:migrate:local": "wrangler d1 migrations apply polarops-db --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply polarops-db --remote",
+    "test:worker": "node utils/scripts/worker-smoke.mjs",
+    "test": "node --env-file-if-exists=.env --test utils/tests/*.test.js",
+    "lint": "node utils/scripts/lint.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.143.0"
+  }
+}

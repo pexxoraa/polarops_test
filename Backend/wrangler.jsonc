@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "polarops-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-29",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "secrets": {
+    "required": ["AUTH_SECRET"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "polarops-db",
+      "database_id": "c7790f76-3d38-44c0-835d-a82d447902e8",
+      "migrations_dir": "utils/db/migrations"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "EXPEDITION_ROOM",
+        "class_name": "ExpeditionRoom"
+      }
+    ]
+  },
+  "exports": {
+    "ExpeditionRoom": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  },
+  "vars": {
+    "WEATHER_API_URL": "https://api.open-meteo.com/v1/forecast",
+    "OPERATIONS_FEED_URL": "",
+    "FRONTEND_ORIGIN": "https://polarops.pages.dev"
+  }
+}

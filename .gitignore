@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+.dev.vars
+.env
+.env.*
+.wrangler/
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+*.sqlite-*
+*.sqlite3
+!.env.example
+!**/.env.example
+.DS_Store

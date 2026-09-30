@@ -1,0 +1,182 @@
+/* Typography
+   Change the variables below to resize the UI from one place. */
+
+:root {
+  --font-body: 16px;
+  --font-nav: 14px;
+  --font-label: 12px;
+  --font-control: 15px;
+  --font-helper: 13px;
+  --font-section: 18px;
+  --font-page-title: 32px;
+  --font-metric: 28px;
+  --font-search-meta: 11px;
+}
+
+body {
+  font-size: var(--font-body);
+}
+
+/* Navigation */
+.sidebar .nav-link,
+.nav a {
+  min-height: 38px;
+  font-size: var(--font-nav);
+}
+
+.nav-section,
+.sidebar-foot,
+.sidebar .brand small {
+  font-size: var(--font-label);
+}
+
+/* Header and controls */
+.expedition-picker label,
+.region-pill,
+.user-copy span,
+.live-dot,
+.sync-queue {
+  font-size: var(--font-label);
+}
+
+.expedition-picker select,
+.global-search input,
+.button {
+  font-size: 12px;
+}
+
+.user-copy strong {
+  font-size: var(--font-nav);
+}
+
+/* Page headings */
+.page-heading h1 {
+  font-size: var(--font-page-title);
+}
+
+.page-heading p {
+  font-size: var(--font-nav);
+}
+
+.panel-title h2 {
+  font-size: var(--font-section);
+}
+
+.panel-title span {
+  font-size: var(--font-helper);
+}
+
+/* Metrics and tables */
+.metric-card span,
+.metric-card small,
+.badge,
+.reference-label,
+.form-section-title {
+  font-size: var(--font-label);
+}
+
+.metric-card strong {
+  font-size: var(--font-metric);
+}
+
+.metric-card .metric-text {
+  font-size: var(--font-body);
+}
+
+table,
+td {
+  font-size: var(--font-nav);
+}
+
+th,
+td small {
+  font-size: var(--font-label);
+}
+
+/* Forms */
+.form-grid > label > span,
+.field label {
+  font-size: var(--font-helper);
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea,
+.field input,
+.field select,
+.field textarea {
+  font-size: var(--font-control);
+}
+
+/* Supporting text */
+.alert-box,
+.reference-banner,
+.polar-note {
+  font-size: var(--font-helper);
+}
+
+.resource-cards strong,
+.resource-card strong,
+.mini-row strong,
+.search-results strong,
+.global-search-result strong {
+  font-size: var(--font-nav);
+}
+
+.resource-cards span,
+.resource-card span,
+.resource-cards p,
+.resource-card p,
+.mini-row span {
+  font-size: var(--font-label);
+}
+
+.search-results span,
+.global-search-result span,
+.global-search-result small {
+  font-size: var(--font-search-meta);
+}
+
+/* Login */
+.login-card h2 {
+  font-size: var(--font-page-title);
+}
+
+.login-card > p,
+.login-card .button {
+  font-size: 13px;
+}
+
+.login-card .field label,
+.login-help > strong,
+.security-note {
+  font-size: var(--font-helper);
+}
+
+.login-card .field input {
+  font-size: 14px;
+}
+
+.security-note {
+  line-height: 1.55;
+}
+
+.leaflet-popup-content {
+  font-size: var(--font-helper);
+}
+
+.mission-map-legend {
+  font-size: var(--font-label);
+}
+
+/* Small screens */
+@media (max-width: 720px) {
+  .sidebar .nav-link,
+  .nav a {
+    font-size: var(--font-helper);
+  }
+
+  .page-heading h1 {
+    font-size: 24px;
+  }
+}
